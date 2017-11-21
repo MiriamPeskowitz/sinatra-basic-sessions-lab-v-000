@@ -1,12 +1,14 @@
 class Item
   attr_accessor :name
-
+ @@all = []
     def initialize(name)
       @name = name
-      @contents = []
+      @@all << self
     end
 
+    def self.all
+      @@all
+    end
     #need to collect more?
-
 
 end
