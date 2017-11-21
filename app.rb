@@ -12,11 +12,10 @@ class App < Sinatra::Base
     erb :index
   end
 
-  post '/checkout' do
-binding.pry
-    @item.contents = Item.new(params [:item])
+  post '/checkout' do  
+    session[:item] = params[:items]
     @session = session
-  #is it just one item?
+  #is it just one item?   @item.contents = Item.new(params [:item])
     erb :show
   end
 end
