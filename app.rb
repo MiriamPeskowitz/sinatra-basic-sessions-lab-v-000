@@ -15,7 +15,7 @@ class App < Sinatra::Base
   post '/checkout' do
 binding.pry
     @item.contents = Item.new(params [:item])
-
+    @session = session
   #is it just one item?
     erb :show
   end
