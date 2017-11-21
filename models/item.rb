@@ -3,6 +3,7 @@ class Item
 
     def initialize(name)
       @name = name
+      @contents = []
     end
 
     #need to collect more?
