@@ -13,7 +13,7 @@ class App < Sinatra::Base
   end
 
   post '/checkout' do  
-    session[:item] = params[:items]
+    session[:item] = params[:item]
     @session = session
   #is it just one item?   @item.contents = Item.new(params [:item])
     erb :show
