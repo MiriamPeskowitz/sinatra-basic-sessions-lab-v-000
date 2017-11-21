@@ -1,9 +1,11 @@
 class Item
-  attr_accessor :name
+  attr_accessor :item
 
     def initialize(attributes)
-      @name = attribute[name]
+      @item = attribute[:item]
     end
+
+    #need to collect more? 
 
     
 end
