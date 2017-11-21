@@ -14,7 +14,7 @@ class App < Sinatra::Base
 
   post '/checkout' do
 
-    @item.contents = Item.new(params [:item][:name])
+    @item.contents = Item.new(params [:item])
 
   #is it just one item?
     erb :show
