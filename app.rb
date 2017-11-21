@@ -13,7 +13,7 @@ class App < Sinatra::Base
   end
 
   post '/checkout' do
-    @item = Item.new(name)
+    @item.contents = Item.new(name)
 
   #is it just one item?
     erb :show
