@@ -13,7 +13,7 @@ class App < Sinatra::Base
   end
 
   post '/checkout' do
-
+binding.pry
     @item.contents = Item.new(params [:item])
 
   #is it just one item?
